@@ -12,11 +12,11 @@ if __name__ == "__main__":
         a = int(argv[1])
         b = int(argv[3])
         if argv[2] == "+":
-            print("{} + {} = {}".format(a, b, ex.add(b, a)))
+            print("{} {} {} = {}".format(a, argv[2], b, ex.add(b, a)))
         elif argv[2] == "-":
-            print("{} - {} = {}".format(a, b, ex.sub(b, a)))
+            print("{} {} {} = {}".format(a, argv[2], b, ex.sub(b, a)))
         elif argv[2] == "*":
-            print("{} * {} = {}".format(a, b, ex.mul(b, a)))
+            print("{} {} {} = {}".format(a, argv[2], b, ex.mul(b, a)))
         elif argv[2] == "/":
-            print("{} / {} = {}".format(a, b, ex.div(b, a)))
+            print("{} {} {} = {}".format(a, argv[2], b, ex.div(b, a)))
         exit(0)
