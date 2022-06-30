@@ -10,13 +10,14 @@ if __name__ == "__main__":
         exit(1)
     else:
         a = int(argv[1])
+        op = argv[2]
         b = int(argv[3])
-        if argv[2] == "+":
-            print("{} {} {} = {}".format(a, argv[2], b, ex.add(b, a)))
-        elif argv[2] == "-":
-            print("{} {} {} = {}".format(a, argv[2], b, ex.sub(b, a)))
-        elif argv[2] == "*":
-            print("{} {} {} = {}".format(a, argv[2], b, ex.mul(b, a)))
-        elif argv[2] == "/":
-            print("{} {} {} = {}".format(a, argv[2], b, ex.div(b, a)))
+        if op is "+":
+            print("{} {} {} = {}".format(a, op, b, ex.add(b, a)))
+        elif op is "-":
+            print("{} {} {} = {}".format(a, op, b, ex.sub(b, a)))
+        elif op is "*":
+            print("{} {} {} = {}".format(a, op, b, ex.mul(b, a)))
+        elif op is "/":
+            print("{} {} {} = {}".format(a, op, b, ex.div(b, a)))
         exit(0)
