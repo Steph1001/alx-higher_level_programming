@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""A module with square class."""
+
+
 class Square:
     """Represents a square.
     Private instance attribute: size:
@@ -21,13 +24,13 @@ class Square:
         """Str method for print from main module."""
         my_str = ""
         if self.__size == 0:
-            return ''
+            return ""
         else:
-            my_str += '\n' * self.__position[1]
+            my_str += "\n" * self.__position[1]
             for i in range(0, self.__size):
-                my_str += ' ' * self.__position[0]
-                my_str += '#' * self.__size
-                my_str += '\n'
+                my_str += " " * self.__position[0]
+                my_str += "#" * self.__size
+                my_str += "\n"
             return my_str[:-1]
 
     @property
@@ -62,7 +65,7 @@ class Square:
 
     def area(self):
         """Returns the current square area."""
-        return self.__size ** 2
+        return self.__size**2
 
     def my_print(self):
         """Prints to stdout the square with the character #,
@@ -79,4 +82,4 @@ class Square:
                 for j in range(0, self.__size):
                     print("#", end="")
                 print()
-            return ''
+            return ""

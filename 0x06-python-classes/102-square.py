@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""102-square.py"""
+
+
 class Square:
     """Represents a square.
     Private instance attribute: size:
@@ -14,7 +17,7 @@ class Square:
 
     def __eq__(self, other):
         """Equal."""
-        if hasattr(other, 'size'):
+        if hasattr(other, "size"):
             return self.__size == other.__size
         return self.__size == other
 
@@ -24,13 +27,13 @@ class Square:
 
     def __lt__(self, other):
         """Less than."""
-        if hasattr(other, 'size'):
+        if hasattr(other, "size"):
             return self.__size < other.__size
         return self.__size < other
 
     def __le__(self, other):
         """Less than or equal."""
-        if hasattr(other, 'size'):
+        if hasattr(other, "size"):
             return self.__size <= other.__size
         return self.__size <= other
 
@@ -50,4 +53,4 @@ class Square:
 
     def area(self):
         """Returns the current square area."""
-        return self.__size ** 2
+        return self.__size**2

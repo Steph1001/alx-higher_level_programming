@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""5-square.py"""
+
+
 class Square:
     """Represents a square.
     Private instance attribute: size:
@@ -29,7 +32,7 @@ class Square:
 
     def area(self):
         """Returns the current square area."""
-        return self.__size ** 2
+        return self.__size**2
 
     def my_print(self):
         """Prints to stdout the square with the character #."""
